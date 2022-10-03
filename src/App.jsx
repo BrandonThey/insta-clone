@@ -1,6 +1,7 @@
 
 import './App.scss';
 import NavBar from './components/NavBar/NavBar';
+import PostDisplay from './containers/PostDisplay/PostDisplay';
 import ProfileSection from './containers/ProfileSection/ProfileSection';
 import StoriesSection from './containers/StoriesSection/StoriesSection';
 
@@ -20,7 +21,7 @@ function App() {
 
           </div>
           <div className="Post-display-content">
-
+            <PostDisplay />
           </div>
         </div>
       </div>

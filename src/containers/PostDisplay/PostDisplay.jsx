@@ -1,12 +1,13 @@
 import PostCard from "../../components/PostCard/PostCard";
-import "./PostDisplay.scss"
+import {
+   imageOne,
+   imageTwo,
+   imageThree,
+   imageFour,
+   imageFive
+} from "../../image_data/image_array.js"
 const PostDisplay = () => {
-    const imgArray = [
-        "../../image_data/Adorable-animal-cat-20787.jpg",
-        "../../image_data/download (1).jpg",
-        "../../image_data/download (2).jpg",
-        "../../image_data/download (3).jpg",
-        "../../image_data/download.jpg"]
+    const imgArray = [imageOne,imageTwo,imageThree,imageFour,imageFive]
 
     const renderImages = imgArray.map((image) => {
         return(

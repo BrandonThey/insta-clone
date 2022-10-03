@@ -1,10 +1,10 @@
 import "./ProfileSection.scss"
-
+import { profilePicture } from "../../image_data/image_array";
 const ProfileSection = () => {
 
     return(
         <div className="profile">
-            <img className="profile-image" src="blah" alt="Profile"/>
+            <img className="profile-image" src={profilePicture} alt="Profile"/>
 
             <div className="bio-section">
                 <div className="profile-header">

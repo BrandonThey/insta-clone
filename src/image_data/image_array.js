@@ -1,0 +1,6 @@
+export const imageOne = require("./Adorable-animal-cat-20787.jpg")
+export const imageTwo = require("./download.jpg")
+export const imageThree = require("./download (1).jpg")
+export const imageFour = require("./download (2).jpg")
+export const imageFive = require("./download (3).jpg")
+export const profilePicture = require("./wonder-day-avatar-memes-cats-35.jpg")
