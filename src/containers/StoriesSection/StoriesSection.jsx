@@ -1,8 +1,10 @@
-
+import "./StoriesSection.scss"
+import { profilePicture } from "../../image_data/image_array"
 const StoriesSection = () => {
     return(
         <div>
-            <h3>placeholder</h3>
+            <img src={profilePicture} className="insta-story-icon"></img>
+            <img src={profilePicture} className="insta-story-icon"></img>
         </div>
     )
 }

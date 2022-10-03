@@ -5,11 +5,11 @@ const NavBar = () => {
 
 
     return (
-        <>
+        <div className="navbar">
             <h3>Instagram</h3>
             <SearchBar />
             {/* Icons */}
-        </>
+        </div>
     )
 }
 
