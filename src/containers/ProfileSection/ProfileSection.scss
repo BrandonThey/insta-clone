@@ -1,0 +1,46 @@
+.profile {
+    display: flex;
+}
+.profile-image {
+    width: 20%;
+}
+.profile-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 10%;
+    .profile-header-follow{
+        width: 20%;
+        height: 100%;
+    }
+    .profile-header-recommended{
+        width: 7%;
+        height: 100%;
+    }
+    .profile-header-settings{
+        width: 10%;
+        height: 100%;
+    }
+}
+
+.profile-stats{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    height: 10%;
+}
+
+.profile-bio{
+    margin: 0;
+
+    .profile-bio-header{
+        margin: 0;
+    }
+    .profile-bio-text{
+        margin: 0;
+    }
+}

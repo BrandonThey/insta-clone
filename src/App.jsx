@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import NavBar from './components/NavBar/NavBar';
 import ProfileSection from './containers/ProfileSection/ProfileSection';
 import StoriesSection from './containers/StoriesSection/StoriesSection';
@@ -10,8 +10,20 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
-      <ProfileSection />
-      <StoriesSection />
+
+      <div className="App-Content">
+        <ProfileSection />
+        <StoriesSection />
+
+        <div className="Post-display">
+          <div className="Post-display-navbar">
+
+          </div>
+          <div className="Post-display-content">
+
+          </div>
+        </div>
+      </div>
 
     </div>
   );
