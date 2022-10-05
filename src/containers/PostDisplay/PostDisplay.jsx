@@ -1,3 +1,4 @@
+import "./PostDisplay.scss"
 import PostCard from "../../components/PostCard/PostCard";
 
 const PostDisplay = (props) => {
@@ -11,6 +12,12 @@ const PostDisplay = (props) => {
 
     return(
         <>
+            <div className="post-type-bar">
+                <p>POSTS</p>
+                <p>REELS</p>
+                <p>VIDEOS</p>
+                <p>TAGGED</p>
+            </div>
             {renderImages}
         </>
     )

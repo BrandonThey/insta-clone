@@ -1,5 +1,4 @@
 import "./StoriesSection.scss"
-import { profilePicture } from "../../image_data/image_array"
 const StoriesSection = (props) => {
     const {profiles} = props
     return(

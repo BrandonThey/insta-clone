@@ -11,8 +11,8 @@ const ProfileSection = (props) => {
                 <div className="profile-header">
                     <h2 className="profile-header-name">{profiles[0].profileName}</h2>
                     <button className="profile-header-follow">Follow</button>
-                    <button className="profile-header-recommended">V</button>
-                    <button className="profile-header-settings">...</button>
+                    <button className="profile-header-recommended">v</button>
+                    <p className="profile-header-settings">...</p>
                 </div>
                 <div className="profile-stats">
                     <h3 className="profile-stats-posts">{profiles[0].numOfPosts} posts</h3>

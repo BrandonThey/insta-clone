@@ -1,12 +1,11 @@
-import { profilePicture } from "../image_data/images"
-
 import {
+    profilePicture,
     imageOne,
     imageTwo,
     imageThree,
     imageFour,
     imageFive
- } from "../../image_data/image_array.js"
+ } from "../image_data/images"
 
 const profiles = [
     {
