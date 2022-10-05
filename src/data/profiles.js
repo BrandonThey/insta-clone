@@ -21,8 +21,8 @@ const profiles = [
         numOfFollowing: "7",
         bioHeader: "Cats of Instagram",
         bioContent: "The #catsofinstagram channel. submit: hastag or link below! collab: partner@catsofinstagram.com catsofinstagram.com",
-        storyImages: [],
-        storyCaptions: [],
+        storyImages: [imageFive,imageFour],
+        storyCaptions: ["Cool Cats", "Wild Wednesday"],
         posts: [imageOne, imageTwo, imageThree, imageFour, imageFive],
     },
     {
@@ -33,8 +33,8 @@ const profiles = [
         numOfFollowing: "30",
         bioHeader: "Dogs of Instagram",
         bioContent: "The #dogs_of_instagram channel. submit: hastag or link below! collab: partner@dogsofinstagram.com dogsofinstagram.com",
-        storyImages: [],
-        storyCaptions: [],
+        storyImages: [dogsFour, dogsThree],
+        storyCaptions: ["Doggy Days", "Dogs Of Insta"],
         posts: [dogsOne, dogsTwo, dogsThree, dogsFour],
     }
 ]
