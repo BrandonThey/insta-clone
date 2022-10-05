@@ -2,9 +2,9 @@ import "./PostDisplay.scss"
 import PostCard from "../../components/PostCard/PostCard";
 
 const PostDisplay = (props) => {
-    const {profiles} = props
+    const {profile} = props
 
-    const renderImages = profiles[0].posts.map((image) => {
+    const renderImages = profile.posts.map((image) => {
         return(
             <PostCard image={image} alt={"post-image"}/>
         )

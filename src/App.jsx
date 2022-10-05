@@ -1,32 +1,59 @@
-
 import './App.scss';
 import NavBar from './components/NavBar/NavBar';
 import PostDisplay from './containers/PostDisplay/PostDisplay';
 import ProfileSection from './containers/ProfileSection/ProfileSection';
 import StoriesSection from './containers/StoriesSection/StoriesSection';
 import profiles from './data/profiles';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
 function App() {
+
+  console.log(profiles)
   return (
-    <div className="App">
-      <header className="App-header">
-        <NavBar />
-      </header>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <NavBar />
+        </header>
 
-      <div className="App-Content">
-        <ProfileSection profiles={profiles}/>
-        <StoriesSection profiles={profiles}/>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="App-Content">
+              <ProfileSection profile={profiles[0]}/>
+              <StoriesSection profile={profiles[0]}/>
 
-        <div className="Post-display">
-          <div className="Post-display-navbar">
+              <div className="Post-display">
+                <div className="Post-display-navbar">
 
-          </div>
-          <div className="Post-display-content">
-            <PostDisplay profiles={profiles}/>
-          </div>
-        </div>
+                </div>
+                <div className="Post-display-content">
+                  <PostDisplay profile={profiles[0]}/>
+                </div>
+              </div>
+            </div>
+          }></Route>
+          <Route
+            path={`/${profiles[1].profileName}`}
+            element={
+            <div className="App-Content">
+              <ProfileSection profile={profiles[1]}/>
+              <StoriesSection profile={profiles[1]}/>
+
+              <div className="Post-display">
+                <div className="Post-display-navbar">
+
+                </div>
+                <div className="Post-display-content">
+                  <PostDisplay profile={profiles[1]}/>
+                </div>
+              </div>
+            </div>
+          }></Route>
+        </Routes>
       </div>
-
-    </div>
+    </Router>
   );
 }
 

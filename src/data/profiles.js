@@ -4,7 +4,12 @@ import {
     imageTwo,
     imageThree,
     imageFour,
-    imageFive
+    imageFive,
+    dogsOne,
+    dogsTwo,
+    dogsThree,
+    dogsFour,
+    dogsProfilePic
  } from "../image_data/images"
 
 const profiles = [
@@ -19,7 +24,18 @@ const profiles = [
         storyImages: [],
         storyCaptions: [],
         posts: [imageOne, imageTwo, imageThree, imageFour, imageFive],
+    },
+    {
+        profileName: "dogs_of_instagram",
+        profilePicture: dogsProfilePic,
+        numOfPosts: "4",
+        numOfFollowers: "1,500",
+        numOfFollowing: "30",
+        bioHeader: "Dogs of Instagram",
+        bioContent: "The #dogs_of_instagram channel. submit: hastag or link below! collab: partner@dogsofinstagram.com dogsofinstagram.com",
+        storyImages: [],
+        storyCaptions: [],
+        posts: [dogsOne, dogsTwo, dogsThree, dogsFour],
     }
 ]
-
 export default profiles;

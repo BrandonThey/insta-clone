@@ -1,10 +1,10 @@
 import "./StoriesSection.scss"
 const StoriesSection = (props) => {
-    const {profiles} = props
+    const {profile} = props
     return(
         <div>
-            <img src={profiles[0].profilePicture} className="insta-story-icon"></img>
-            <img src={profiles[0].profilePicture} className="insta-story-icon"></img>
+            <img src={profile.profilePicture} className="insta-story-icon"></img>
+            <img src={profile.profilePicture} className="insta-story-icon"></img>
         </div>
     )
 }
