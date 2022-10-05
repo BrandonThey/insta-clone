@@ -6,6 +6,7 @@ import {BsPlusSquare} from "react-icons/bs"
 import {ImCompass2} from "react-icons/im"
 import {AiOutlineHeart} from "react-icons/ai"
 import {CgProfile} from "react-icons/cg"
+import { Link } from "react-router-dom"
 const NavBar = () => {
 
 
@@ -14,7 +15,9 @@ const NavBar = () => {
             <h3 className="logo">Instagram</h3>
             <SearchBar className="searchbar"/>
             <div className="navbar-icons">
-                <GrHomeRounded className="icon"/>
+                <Link to="/">
+                    <GrHomeRounded className="icon"/>
+                </Link>
                 <FaRegPaperPlane className="icon"/>
                 <BsPlusSquare className="icon"/>
                 <ImCompass2 className="icon"/>
