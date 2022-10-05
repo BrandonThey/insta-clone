@@ -3,3 +3,15 @@
     justify-content: space-around;
     font-size: 10px;
 }
+
+@media screen and (max-width: 320px){
+    .post-type-bar{
+        width: 60%;
+        justify-content: space-around;
+        font-size: 10px;
+    }
+    .posts{
+        display: flex;
+        flex-direction: column;
+    }
+}

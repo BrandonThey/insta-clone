@@ -13,7 +13,9 @@ const NavBar = () => {
     return (
         <div className="navbar">
             <h3 className="logo">Instagram</h3>
-            <SearchBar className="searchbar"/>
+            <div className="searchbar">
+            <SearchBar />
+            </div>
             <div className="navbar-icons">
                 <Link to="/">
                     <GrHomeRounded className="icon"/>

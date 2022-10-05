@@ -18,7 +18,9 @@ const PostDisplay = (props) => {
                 <p>VIDEOS</p>
                 <p>TAGGED</p>
             </div>
-            {renderImages}
+            <div className="posts">
+                {renderImages}
+            </div>
         </>
     )
 }
