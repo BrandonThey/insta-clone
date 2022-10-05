@@ -1,31 +1,27 @@
 import "./ProfileSection.scss"
-import { profilePicture } from "../../image_data/image_array";
-const ProfileSection = () => {
+const ProfileSection = (props) => {
+
+    const {profiles} = props;
 
     return(
         <div className="profile">
-            <img className="profile-image" src={profilePicture} alt="Profile"/>
+            <img className="profile-image" src={profiles[0].profilePicture} alt="Profile"/>
 
             <div className="bio-section">
                 <div className="profile-header">
-                    <h2 className="profile-header-name">Cats_of_instagram</h2>
+                    <h2 className="profile-header-name">{profiles[0].profileName}</h2>
                     <button className="profile-header-follow">Follow</button>
                     <button className="profile-header-recommended">V</button>
                     <button className="profile-header-settings">...</button>
                 </div>
                 <div className="profile-stats">
-                    <h3 className="profile-stats-posts">16,889 posts</h3>
-                    <h3 className="profile-stats-followers">13.1m followers</h3>
-                    <h3 className="profile-stats-following">7 following</h3>
+                    <h3 className="profile-stats-posts">{profiles[0].numOfPosts} posts</h3>
+                    <h3 className="profile-stats-followers">{profiles[0].numOfFollowers} followers</h3>
+                    <h3 className="profile-stats-following">{profiles[0].numOfFollowing} following</h3>
                 </div>
                 <div className="profile-bio">
-                    <h3 className="profile-bio-header">Cats of Instagram</h3>
-                    <p className="profile-bio-text">
-                        The #catsofinstagram channel.
-                        submit: hastag or link below!
-                        collab: partner@catsofinstagram.com
-                        catsofinstagram.com
-                    </p>
+                    <h3 className="profile-bio-header">{profiles[0].bioHeader}</h3>
+                    <p className="profile-bio-text">{profiles[0].bioContent}</p>
                 </div>
             </div>
         </div>

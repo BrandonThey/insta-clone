@@ -1,4 +1,13 @@
 import { profilePicture } from "../image_data/images"
+
+import {
+    imageOne,
+    imageTwo,
+    imageThree,
+    imageFour,
+    imageFive
+ } from "../../image_data/image_array.js"
+
 const profiles = [
     {
         profileName: "cats_of_instagram",
@@ -8,7 +17,9 @@ const profiles = [
         numOfFollowing: "7",
         bioHeader: "Cats of Instagram",
         bioContent: "The #catsofinstagram channel. submit: hastag or link below! collab: partner@catsofinstagram.com catsofinstagram.com",
-
+        storyImages: [],
+        storyCaptions: [],
+        posts: [imageOne, imageTwo, imageThree, imageFour, imageFive],
     }
 ]
 
